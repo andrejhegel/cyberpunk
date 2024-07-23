@@ -1,0 +1,448 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'Archangelsk';
+    src: url('/public/fonts/ofont.ru_Archangelsk.ttf') format('truetype');
+}
+
+header{
+    height: 1000px;
+    background-image: url(/public/img/background/main-background.png);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; 
+    flex-direction: column;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    margin-top: 20px;
+    height: 74px;
+    align-items: center;
+}
+
+nav ul, ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav{
+    width: 20vw;
+}
+
+.header__info-block {
+    width: 624px;
+    height: 369px;
+    background-color: #F8F200;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 100% 85%, 85% 100%, 35.9% 100%, 0% 100%, 0% 15%);
+    position: absolute;
+    bottom: 0px;
+    left: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__info-text, .title__night-city, .title__raffle_text, .describe__title{
+    font-family: 'Archangelsk';
+    font-size: 62px;
+}
+
+.header__info_btn{
+    width: 272px;
+    height: 78px;
+    background-color: black;
+    font-family: "Roboto";
+    color: #F8F200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__header-btn{
+margin-top: 25px;
+ width: 484px;
+ display: flex;
+ justify-content: start;
+}
+
+.container__night-city{
+    height: 847px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.content__night-city, .content__HP{
+    width: 1280px;
+}
+
+.describe{
+    width: 952px;
+    font-size: 18px;
+    font-family: "Roboto";
+    margin-top: 25px;
+}
+
+.content__img-night-city-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__img-night-city-right{
+    width: 788px;
+}
+
+.content__img-night-city-left>img{
+    width: 460px;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 100% 85%, 85% 100%, 35.9% 100%, 0% 100%, 0% 15%);
+    margin-top: 25px;
+}
+
+.content__img-night-city-left>img:first-child{
+    margin-top: 0px;
+}
+
+.content__img-night-city{
+    margin-top: 70px;
+}
+
+.content__img-night-city{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__img-night-city-right>img{
+    clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 100% 85%, 85% 100%, 35.9% 100%, 0% 100%, 0% 15%);
+}
+
+.background__raffle{
+    background-image: url(/public/img/background/bw-gradient.png);
+    width: 100%;
+    height: 70px;
+}
+
+.container__raffle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.content__raffle{
+    width: 1280px;
+    height: 814px;
+}
+
+.title__raffle_text{
+    color: white;
+    margin-left: 32px;
+}
+.title__raffle{
+    display: flex;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.raffle{
+    color: #FFFFFF;
+}
+
+.main__describe, .text__game{
+    color: #52BEDC;
+}
+
+.raffle__main{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.raffle__input{
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: none;
+    margin-top: 35px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #777777;
+    outline: none;
+}
+
+.raffle__input:first-child{
+    margin-top: 0px;
+}
+
+.raffle__input::placeholder{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+.raffle__form_send{
+    width: 100%;
+    height: 383px;  
+    padding-top: 73px;
+}
+
+.raffle__input_file{
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.label__input{
+    width: 100%;
+    height: 121px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: #FFFFFF;
+    background-image: url(/public/img/other/border_img.png);
+    background-size: 100% 100%; 
+    background-position: center;
+    flex-direction: column;
+}
+
+.label__input_text{
+    border-bottom: #FFFFFF 1px solid;
+}
+
+.label__input_type{
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: #FFFFFF;
+    margin-top: 7px;
+}
+
+.raffle__btn_send{
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #000000;
+    width: 192px;
+    height: 59px;
+    background-color: #F8F200;
+    border: none;
+    margin-top: 37px;
+}
+
+.block__checkbox{
+    margin-top: 15px;
+    display: flex;
+}
+
+.text__checkbox{
+    color: #FFFFFF; 
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.My_check{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+} 
+
+.My_check+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.My_check+label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: #777777 solid 1px;
+}
+
+.My_check:checked+label::before{
+    border-color: #F8F200;
+    background-image: url(/public/img/other/checked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.My_check:not(:checked)+label:hover::before{
+    border-color: #f8f40088;
+}
+
+.background__HP{
+    background-image: url(/public/img/background/background-HP.png);
+    width: 100%;
+    height: 70px;
+}
+
+.content__HP{
+    margin-top: 70px;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.container__HP{
+    background-color: #F8F200;
+    width: 100%;
+    height: 676px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img__HP_conent{
+    display: flex;
+    flex-direction: column;
+    width: 624px;
+    align-items: center;
+}
+
+.img__HP_logo{
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    align-items: center;
+}
+
+.img__raz{
+    width: 90px;
+    height: 20px;
+}
+
+.describe__HP_content{
+    padding-left: 32px;
+}
+
+.HP {
+    width: 624px;
+}
+
+.describe__list ul {
+    margin-top: 25px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.describe__text, .footer__date_text{
+    padding-left: 10px;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.btn__describe{
+    width: 194px;
+    height: 59px;
+    background-color: #000000;
+    color: #F8F200;
+    border: none;
+    margin-top: 40px;
+}
+
+.shop__game{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.game{
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.describe__game{
+    margin-left: 32px;
+}
+
+.text__game{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.platform{
+    margin-top: 70px;
+}
+
+.plarform__container{
+    width: 319px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0px;
+}
+
+.plarform__container:last-child{
+    margin-top: 48px;
+}
+
+.footer__source{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+.footer__date{
+    display: flex;
+    justify-content: space-between;
+    width: 388px;
+    align-items: center;
+}
+
+.footer__date_text{
+    padding: 0px;
+}
+
+.market__content{
+    background-color: #000000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.shop__img{
+    max-height: 717px;
+}
+
